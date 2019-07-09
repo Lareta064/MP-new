@@ -60,3 +60,13 @@ let cardItem = document.querySelectorAll('.product-card--service');
 		iconBox.setAttribute('src', ImgSrc );
 	}
 }
+//-фикс меню
+window.onscroll = function() {
+	if(document.documentElement.scrollTop > 70){
+		document.querySelector('#header-fixed').classList.add('active');
+	}
+	else{
+		document.querySelector('#header-fixed').classList.remove('active');
+	}
+
+}
