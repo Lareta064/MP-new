@@ -1,5 +1,5 @@
 // фиксирующееся верхнее меню
-#header-fixed.header-fixed
+#header-fixed.header-fixed.active
 	.container
 		.header-menu
 			.header-logo
@@ -26,6 +26,7 @@
 					button.cmn-toggle-switch.cmn-toggle-switch__htx#nav-menu-toggle
 						span toggle menu
 header.header
+	img.mobile-item(src="img/spin.png", alt="шестеренка")
 	.container
 		.mobile-content.d-md-none
 			.mobile-contacts
@@ -50,7 +51,7 @@ header.header
 				img(src="img/slide_mob.png", alt="фоновая картинка")
 
 		.header-text
-			//- img(src="img/spin.png", alt="")
+			//- img.mobile-item(src="img/spin.png", alt="шестеренка")
 			h1.title-1 ПРИВЕТ!
 			h3.title-3.mb-20 Мы веб-студия Marketing Place. Занимаемся созданием сайтов, дизайном, упаковкой продукта, привлечением клиентов в бизнес. Полный комплекс услуг интернет-маркетинга.
 

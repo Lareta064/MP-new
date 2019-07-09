@@ -6,8 +6,7 @@
 	max-height: 790px;
 	background: #fff;
 	background-color: #FFF;
-	// background-image: url(../img/slide_mob.png);
-
+	position: relative;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
@@ -36,11 +35,16 @@
 	}
 }
 .header-fixed.active{
-	padding-top: 15px;
-	background-color: #fff;
+	// padding-top: 5px;
+	background-color: #454444;
 	top: 0px;
-	height: 70px;
-	@media(min-width: 768px){height: 100px;}
+	height: 45px;
+	@media(min-width: 768px){
+		background-color: #fff;
+		height: 85px;
+		-webkit-box-shadow: 0 5px 10px rgba(0,0,0, .05);
+		        box-shadow: 0 5px 10px rgba(0,0,0, .05);
+		}
 }
 .header-menu{
 	display: flex;
@@ -48,7 +52,7 @@
 	        align-items: center;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
-	// margin-bottom: 20%;
+
 }
 .header-logo{
 	width: 50%;
@@ -69,9 +73,8 @@
 	padding-bottom: 60px;
 	width: 0%;
 	text-align: right;
-	// bottom: 0;
 	transition: 1s;
-	// @media(min-width: 768px){position: relative;top:0;}
+
 	@media(min-width: 768px){
 		top:0;
 		position: relative;
@@ -86,7 +89,7 @@
 		text-align: left;
 		bottom:auto;
 		width: auto;
-		// top:-9px;
+
 
 	}
 }
@@ -231,30 +234,20 @@
         transform:rotate(360deg);
     }
 }
+.mobile-item{
+	position: absolute;
+	left: 4%;
+	bottom:12%;
+
+animation-name: spin;
+animation-duration: 1500ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
 .header-text{
 	position: relative;
 	max-width: 280px;
-	// img{
-	// 	position: absolute;
-	// 	right: 5%;
-	// 	  -webkit-animation-name: spin;
- //    -webkit-animation-duration: 1200ms;
- //    -webkit-animation-iteration-count: infinite;
- //    -webkit-animation-timing-function: linear;
- //    -moz-animation-name: spin;
- //    -moz-animation-duration: 1200ms;
- //    -moz-animation-iteration-count: infinite;
- //    -moz-animation-timing-function: linear;
- //    -ms-animation-name: spin;
- //    -ms-animation-duration: 1200ms;
- //    -ms-animation-iteration-count: infinite;
- //    -ms-animation-timing-function: linear;
 
- //    animation-name: spin;
- //    animation-duration: 1200ms;
- //    animation-iteration-count: infinite;
- //    animation-timing-function: linear;
-	// }
 	@media(min-width: 768px){
 		width: 60%;
 		max-width: 595px;}
