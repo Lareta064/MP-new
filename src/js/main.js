@@ -1,7 +1,33 @@
-// $(document).ready(function() {
+$(document).ready(function() {
+	$(function(){
+		$('#number-slider').slick({
+			dots: true,
+      		slidesToShow: 5,
+	slidesToScroll: 1,
+	responsive: [
+		{
+	      breakpoint: 1200,
+	      settings: {
+	        slidesToShow: 4,
+	      }
+	    },
+	    {
+	      breakpoint: 992,
+	      settings: {
+	        slidesToShow: 3,
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 2,
 
-
-// })
+	      }
+	    }
+    ]
+	});
+ })
+})
 //-клик по гамбургеру
 var menuToggle = document.querySelector('.cmn-toggle-switch');
 var menuMobile = document.querySelector('#header-nav');
