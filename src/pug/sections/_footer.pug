@@ -1,0 +1,91 @@
+footer.footer
+	.container
+		.footer-content
+			.row
+				.col-md-2.footer-logo-col
+					.footer-logo
+						img(src="img/footer-logo.png", alt="logo")
+				.col-md-6
+					.footer-center.d-flex
+						.footer-menu
+							.title-3 МЕНЮ
+							nav.footer-nav
+								a(href="#").footer-nav-item Создание сайтов
+								a(href="#").footer-nav-item Дизайн
+								a(href="#").footer-nav-item SMM
+								a(href="#").footer-nav-item SEO оптимизация
+								a(href="#").footer-nav-item Контекстная реклама
+								a(href="#").footer-nav-item E-mail маркетинг
+						.footer-contacts.contacts-block
+							.title-3 КОНТАКТЫ
+							a(href="tel:89535127770").contacts-block__item.d-flex
+								.item-icon
+									img.animated.pulse.infinite(src="img/icon_5_1.png", alt="phone")
+								.item-text
+									.item-title Телефон
+									.item-content +7&nbsp;953&nbsp;512&nbsp;777&nbsp;0
+							a(href="mailto:Marketing-place@yandex.ru").contacts-block__item.d-flex
+								.item-icon
+									img.animated.pulse.infinite(src="img/icon_3_1.png", alt="phone")
+								.item-text
+									.item-title Почта
+									.item-content Marketing-place@yandex.ru
+							a(href="tel:89535127770").contacts-block__item.d-flex
+								.item-icon
+									img.animated.pulse.infinite(src="img/icon_4_1.png", alt="phone")
+								.item-text
+									.item-title Время работы
+									.item-content пн-вс: 10:00-20:00
+				.col-md-4
+					.footer-addition
+						.footer-col.order-md-1
+							.title-3.mb-2 МЫ В СОЦ. СЕТЯХ
+							ul.submenu
+								li: a(href="#"): i.fab.fa-vk
+									//- img(src="img/vk.jpg", alt="vk")
+								li: a(href="#"): i.fab.fa-instagram
+									//- img(src="img/whatsapp.jpg", alt="whatsapp")
+								li: a(href="#"): i.fab.fa-telegram-plane
+									//- img(src="img/tel.jpg", alt="telegram")
+								li: a(href="#"): i.fab.fa-whatsapp
+
+						.footer-col.order-md-2
+							.title-3 ПРАЙС-ЛИСТ
+							a.modal-btn(href="#" download)
+								span.button-text Прайс-лист
+								span.button-icon.button-icon--search
+									img(src="img/icon_6.png", alt="button")
+
+
+// модальные окна
+
+// Modal for service
+#serviceModal.modal.fade.wow.animated.zoomIn(tabindex="-1" role="dialog" aria-labelledby="serviceModalTitle" aria-hidden="true")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			.modal-header
+				.modal-title-wrapper
+					h5#serviceModalTitle.modal-title Оставьте ваш телефон
+					p.modal-subtitle МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ
+						span.color-span  10&nbsp;МИНУТ
+				button.close.custom-close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") ×
+			.modal-body
+
+				form.modal-form#contact-form
+					input(type="hidden" name="project_name" value="wsmarketingplace.ru")
+					input(type="hidden" name="admin_email" value="lareta1@yandex.ru.ru")
+					input(type="hidden" name="email_from" value="info@wsmarketingplace.ru")
+
+
+					.form-group
+						input.phone.form-control(type="phone" placeholder="+7(XXX)XXX-XX-XX" required)
+
+					button(type="submit").modal-btn#send-form
+						span.button-text Задать вопрос
+						span.button-icon
+							img(src="img/btn-icon.png", alt="button")
+				#answer
+
+
+

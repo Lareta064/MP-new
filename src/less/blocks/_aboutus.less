@@ -1,4 +1,6 @@
-.aboutus{padding-top: 60px;}
+.aboutus{
+	overflow: hidden;
+	padding-top: 60px;}
 #number-slider{
 	.slider-item{
 		// max-width: 190px;
@@ -16,8 +18,11 @@
 	.slick-dots li button:before:last-child{margin-right: 0;}
 }
 .slider-item{
+	width: 280px;
+	text-align: center;
 	padding: 14px;
 	margin-left: auto;margin-right: auto;
+	@media(min-width: 425px){width: 300px;text-align: left;}
 	@media(min-width: 992px){padding: 16px;}
 }
 .slider-item_num{

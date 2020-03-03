@@ -1,0 +1,70 @@
+.header {}
+
+.header--sites {
+	background-image: url(../img/sites/sites.jpg);
+	background-size: cover;
+	background-position: center;
+
+	@media(min-width:1440px) {
+		background-position: right;
+		background-size: contain;
+	}
+}
+
+@media(min-width:1440px) {
+
+	.header-inner-text .title-1 {
+		font-size: 54px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		font-weight: 700;
+	}
+
+}
+
+.header-inner-text.header-text {
+	@media(min-width:768px) {
+		width: 35%;
+
+		.modal-btn {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
+		.title-3 {
+			max-width: 23ch;
+		}
+	}
+
+	@media(min-width:992px) {
+		width: 45%;
+		min-width: 300px;
+	}
+}
+
+.presentaision-block {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	padding-top: 1.8em;
+}
+
+.present-play {
+
+	display: block;
+	margin-right: 25px;
+
+	svg {
+		width: 4em;
+		height: 4em;
+	}
+}
+
+.present-text {
+	font-size: 31px;
+}
+
+.fil0 {
+	fill: #86b92b;
+	fill-rule: nonzero
+}

@@ -1,0 +1,91 @@
+.teame{
+	padding-top: 60px;
+	margin-bottom: 80px;}
+
+.block-wrapper{
+	position: relative;
+	right: -15px;
+	overflow: hidden;
+}
+
+.block-wrapper .team-persone{
+	overflow:hidden;
+	position: relative;
+	margin-right: 15px;
+	width: 230px;
+	@media(min-width: 768px){
+		width: auto;
+	}
+}
+.persone-info{
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 10px;
+	text-align: center;
+}
+.team-persone{
+	position: relative;
+	margin-right: 15px;}
+.hover-block{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0, .45);
+	transition: .8s;
+	margin-top: 140%;
+}
+.team-persone:hover .hover-block{margin-top: 0;}
+.hover-block-text{
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	padding-left: 15px;
+	opacity: 0;
+	transition: 0.8s;
+
+}
+.team-persone:hover .hover-block{
+	.hover-block-text{opacity: 1;}
+	margin-top: 0;
+}
+.persone-name{
+	font-size: 1rem;
+	color: @green;}
+.persone-status{
+	font-size: 1rem;
+	color:#fff;}
+
+#teamSliderMobile{
+	position: relative;
+	right:-15px;
+
+}
+#teamSlider .slick-dots{margin-bottom: -25px;}
+#teamSliderMobile .slick-dots li button:before{display: none;}
+#teamSlider .slick-dots li button:before  {
+		font-size: 0;
+		width: 15px;
+		height: 3px;
+		margin-right: 6px;
+		background-color: #454444;
+		@media(min-width: 992px){width: 20px;}
+
+	}
+#teamSlider .slick-dots li button:before:last-child{margin-right: 0;}
+.fa-caret-right,
+.fa-caret-left{
+	cursor: pointer;
+	position: absolute;
+	bottom: -50px;
+	left: 49%;
+	font-size: 40px;
+	&:hover{
+		color: #a2b943;
+	}
+
+}
+.fa-caret-right{transform: translateX(120%);}
+.fa-caret-left{transform: translateX(-120%);}

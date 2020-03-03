@@ -1,0 +1,43 @@
+header.header
+	.header-desk-img
+		img(src="img/header-desk.jpg", alt="")
+	.header-animate.d-none.d-xl-block
+		table(border="0" cellpadding="0" style="text-align:center;margin:auto" width="950" align="center")
+			tr
+				td
+					script(type="text/javascript" src="S_Dialog_media/S_Dialog_player_embed.js")
+
+	img.mobile-item(src="img/spin.png", alt="шестеренка")
+	.container
+		.mobile-content.d-md-none
+			.mobile-contacts
+				.mobile-contacts-col.text-center
+					.icon-block.icon-block--phone
+						img.animated.pulse.infinite(src="img/phone.png", alt="phone")
+					.contacts-col-text позвонить
+					a.header-contacts__phone(href="tel:89535127770") +7&nbsp;953&nbsp;512&nbsp;777&nbsp;0
+
+				.mobile-contacts-col.text-center
+					.icon-block.icon-block--pencil
+						img(src="img/pencil.png", alt="pencil")
+					.contacts-col-text написать
+					.social-block
+						.social-block__item
+							img(src="img/vk.jpg", alt="vk")
+						.social-block__item
+							img(src="img/whatsapp.jpg", alt="whatsapp")
+						.social-block__item
+							img(src="img/tel.jpg", alt="telegram")
+			.bg-img
+				img(src="img/slide_mob.png", alt="фоновая картинка")
+
+		.header-text
+			//- img.mobile-item(src="img/spin.png", alt="шестеренка")
+			h1.title-1 ПРИВЕТ!
+			h3.title-3.mb-20 Мы веб-студия Marketing Place. Занимаемся созданием сайтов, дизайном, упаковкой продукта, привлечением клиентов в бизнес. Полный комплекс услуг интернет-маркетинга.
+
+			h3.title-3.last-paragrafe Задай вопрос прямо сейчас
+			button.modal-btn(data-toggle="modal" data-target="#serviceModal")
+				span.button-text Задать вопрос
+				span.button-icon
+					img(src="img/btn-icon.png", alt="button")

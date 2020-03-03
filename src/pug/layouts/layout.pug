@@ -21,12 +21,22 @@ html(lang='ru')
 
 	body
 
-
+		.fix-contacts.d-md-none
+			.fix-contacts__item
+				a(href="#" data-toggle="modal" data-target="#serviceModal") Заявка
+			.fix-contacts__item
+				a(href="https://api.whatsapp.com/send?phone=79535127770") Whatsapp
+			.fix-contacts__item
+				a(href="tel:+79535127770" ) Позвонить
 		block content
 
 		script(src="libs/jquery/jquery-3.0.0.min.js")
 		script(src="libs/bootstrap/bootstrap.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
 		script(src="libs/slick/slick.min.js")
 		script(src="libs/wow.min.js")
+		script(src="libs/jquery.maskedinput.min.js")
 		script(src='js/gamburger.js')
+		//- script(src='S_Dialog_media/S_Dialog_player_embed.js')
 		script(src='js/main.js')

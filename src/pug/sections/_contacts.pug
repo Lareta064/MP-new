@@ -1,0 +1,41 @@
+section.contacts
+	.container
+		h2.title-2.title-2--contacts.d-none.d-md-block контакты
+		.row(style="position: relative")
+			.contact-block-img.d-sm-none
+				img(src="img/offer.png", alt="картинка")
+			.col-sm-6.col-lg-5
+				.contacts-block
+
+					.contacts-block-info.d-none.d-sm-block
+						h2.title-2.title-2--contacts.d-md-none контакты
+						a(href="tel:89535127770").contacts-block__item.d-flex
+							.item-icon
+								img.animated.pulse.infinite(src="img/phone.png", alt="phone")
+							.item-text
+								.item-title Телефон
+								.item-content +7&nbsp;953&nbsp;512&nbsp;777&nbsp;0
+						a(href="mailto:Marketing-place@yandex.ru").contacts-block__item.d-flex
+							.item-icon
+								img.animated.pulse.infinite(src="img/envelop.png", alt="phone")
+							.item-text
+								.item-title Почта
+								.item-content Marketing-place@yandex.ru
+						a(href="tel:89535127770").contacts-block__item.d-flex
+							.item-icon
+								img.animated.pulse.infinite(src="img/time.png", alt="phone")
+							.item-text
+								.item-title Время работы
+								.item-content пн-вс: 10:00-20:00
+					.contacts-block-button
+						.button-block-title.button-block-title--mob Задайте вопрос нам
+						.button-block-title.button-block-title--desk Получите бесплатную консультацию&nbsp;от&nbsp;специалиста
+						button.modal-btn(data-toggle="modal" data-target="#serviceModal")
+							span.button-text Консультация
+							span.button-icon
+								img(src="img/btn-icon.png", alt="button")
+
+
+
+			.d-none.d-sm-block.col-sm-6.col-lg-7
+				img(src="img/offer.png", alt="картинка")
