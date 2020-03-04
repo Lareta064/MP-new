@@ -1,11 +1,15 @@
-.title-2--service{
+.title-2--service {
 	display: none;
 	margin-bottom: 75px;
-	@media(min-width: 768px){display: block;}
+
+	@media(min-width: 768px) {
+		display: block;
+	}
 }
-.product-card{
+
+.product-card {
 	border-radius: 4px;
-  	 box-shadow: 0px 3px 15.84px 0.16px rgba(0, 3, 2, 0.23);
+	box-shadow: 0px 3px 15.84px 0.16px rgba(0, 3, 2, 0.23);
 	color: #FFF;
 	display: block;
 	color: @text;
@@ -15,48 +19,119 @@
 	position: relative;
 	padding: 25px 16px 20px 40px;
 	height: 320px;
-	transition:all .8s ;
+	transition: all .5s;
 	margin-bottom: 25px;
-	@media(min-width: 768px){box-shadow: none	}
+
+	@media(min-width: 768px) {
+		box-shadow: none
+	}
 }
-.product-card-arrow{
+
+.product-card-arrow {
 	font-weight: 700;
 	font-size: 28px;
 	left: 44px;
 	bottom: 20px;
 	position: absolute;
-    transition: 1s;
+	transition: 1s;
 }
-.product-card-icon{
+
+.product-card-icon {
 	width: 40px;
 	height: 40px;
 	margin-bottom: 30px;
-	@media(min-width:768px){
+
+	@media(min-width:768px) {
 		width: 70px;
-	height: 70px;
+		height: 70px;
 	}
 }
-.card-text{
+
+.card-text {
 	font-size: 16px;
-	@media(min-width:768px){font-size: 17px;}
+
+	@media(min-width:768px) {
+		font-size: 17px;
+	}
 }
-.title-4--card{margin-bottom: 12px;}
-.product-card:hover{
+
+.title-4--card {
+	margin-bottom: 12px;
+}
+
+.product-card:hover {
 	border-radius: 4px;
-  	box-shadow: 0px 8px 51.46px 10.54px rgba(0, 3, 2, 0.23);
+	box-shadow: 0px 8px 51.46px 10.54px rgba(0, 3, 2, 0.23);
 	color: #FFF;
 	background-color: @green;
-	.product-card-arrow{
+
+	.product-card-arrow {
 		left: 200px;
 		color: #FFF;
 
 	}
 }
 
-.col-flex{
+.col-flex {
 	display: flex;
 	-webkit-align-items: center;
-	        align-items: center;
+	align-items: center;
 	-webkit-justify-content: center;
-	        justify-content: center;
+	justify-content: center;
+}
+
+/*inner*/
+.service--inner {
+	padding-top: 45px;
+
+	.service--mobile {
+		min-height: 150px;
+		padding-bottom: 30px;
+
+	}
+
+	.product-card {
+		height: 355px;
+
+		&:hover .card-price {
+			color: @dark ;
+		}
+
+		&.letter-special .product-card-arrow {
+			left: 25px;
+		}
+	}
+
+	.product-card-icon svg {
+		width: 60px;
+		height: 60px;
+	}
+
+	.pr-15 {
+		padding-right: 15px;
+		padding-left: 25px;
+	}
+
+	.letter-special {
+		letter-spacing: -1px;
+	}
+
+	.title-4 {
+		min-height: 62px;
+
+	}
+
+	.card-text {
+		min-height: 80px;
+	}
+
+
+}
+
+.card-price {
+	font-weight: 700;
+	font-size: 20px;
+	color: @green;
+	padding-top: 10px;
+
 }

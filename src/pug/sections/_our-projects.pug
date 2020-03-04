@@ -1,0 +1,25 @@
+mixin slideItem(imgSrc, desc, name)
+	.projects-slider-item
+		.slider-inner
+			.row
+				.col-md-3.col-lg-3.col-xl-2
+					.slider-descrip
+						p.project-info !{desc}
+						p.project-title !{name}
+						a(href="#").project-link Смотреть кейс
+				.col-md-9.col-lg-9.col-xl-10
+						.slider-img
+							img(src="img/projects/"+ imgSrc+".jpg", alt="проект")
+section.our-projects
+	.container
+		h2.title-2 наши проекты
+		.our-projects-slider
+			+slideItem('rabota_9', 'Landing Page&nbsp;агенства ланшафтного&nbsp;дизайна в Италии', 'smartgarden')
+			+slideItem('rabota_8', 'Landing Page для развлекательного заведения', 'киноhall')
+			+slideItem('rabota_7', 'Landing Page по продаже спортивного снаряжения для походов на Эльбрус', 'кошки&nbsp;тут')
+			+slideItem('rabota_6', 'Многостраничный сайт по дистанционному обучению рабочих специальностей', 'Профессиональный стандарт')
+			+slideItem('rabota_5', 'LandingPage для продажи ферм и оборудования для майнинга', 'MainMiner')
+			+slideItem('rabota_4', 'LandingPage для ремонтной и отделочной фирмы', 'MasterPro')
+			+slideItem('rabota_3', 'Многостраничный сайт по изготовлению металлических конструкций', 'met&nbsp;-&nbsp;kov35')
+			+slideItem('rabota_2', 'Многостраничный сайт по разработке проектной и рабочей документации', 'ДЕЛЬТА В ГРУПП')
+			+slideItem('rabota_1', 'Интернет-магазин по продаже оборудования для майнинга', 'PUSHMINER')
