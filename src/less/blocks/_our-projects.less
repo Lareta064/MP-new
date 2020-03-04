@@ -13,6 +13,11 @@
 }
 
 .our-projects-slider {
+	.projects-slider-item {
+
+		padding-bottom: 25px;
+	}
+
 	.slider-descrip {
 		position: relative;
 		z-index: 5;
@@ -83,9 +88,24 @@
 		}
 	}
 
+	.slider-img img {
+		box-shadow: 0 10px 16px rgba(0, 0, 0, .4);
+	}
+
 	.slick-dots {
 		bottom: -45px;
 		font-weight: 700;
+
+
+		@media(min-width:768px) {
+			left: 25%;
+			text-align: left;
+		}
+
+		@media(min-width:1200px) {
+			left: 16%;
+		}
+
 	}
 
 	.slick-dots li button {
@@ -118,7 +138,7 @@
 	.project-arr--left {
 		position: absolute;
 		bottom: -45px;
-		right: 90px;
+		right: 120px;
 		z-index: 10;
 		cursor: pointer;
 	}
